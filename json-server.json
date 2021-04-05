@@ -1,0 +1,103 @@
+{
+  "sessionsUser": {
+    "user": {
+      "id": 1,
+      "email": "lucastadra16@gmail.com",
+      "name": "Lucas Tadra",
+      "type": "user",
+      "code": "batata123",
+      "avatarUrl": "",
+      "userRole": "Admin"
+    },
+    "token": "batata123456"
+  },
+  "userEnvironments": [
+    {
+      "id": 0,
+      "name": "Lucas Bedroom",
+      "external": false,
+      "restrict": true
+    },
+    {
+      "id": 1,
+      "name": "Front Garden",
+      "external": true,
+      "restrict": false
+    },
+    {
+      "id": 2,
+      "name": "Dining Room",
+      "external": false,
+      "restrict": false
+    }
+  ],
+  "environmentAccess": [
+    {
+      "environmentId": 0,
+      "userId": 1,
+      "lights": true,
+      "dimmer": true,
+      "music": false,
+      "switch": true,
+      "fan": false,
+      "airConditioner": true
+    },
+    {
+      "environmentId": 1,
+      "userId": 1,
+      "lights": true,
+      "dimmer": true,
+      "music": false,
+      "switch": false,
+      "fan": false,
+      "conditioner": false
+    },
+    {
+      "environmentId": 1,
+      "userId": 1,
+      "lights": true,
+      "dimmer": true,
+      "music": true,
+      "switch": false,
+      "fan": true,
+      "conditioner": false
+    }
+  ],
+  "deviceTypes": [
+    {
+      "id": 0,
+      "name": "Lamp"
+    },
+    {
+      "id": 1,
+      "name": "Fan"
+    },
+    {
+      "id": 2,
+      "name": "Air Conditioner"
+    },
+    {
+      "id": 3,
+      "name": "Music Player"
+    },
+    {}
+  ],
+  "environmentDevices": [
+    {
+      "id": 0,
+      "environmentId": 0,
+      "deviceType": 0,
+      "alias": "LB-L1",
+      "dimmable": true,
+      "switchable": true
+    },
+    {
+      "id": 1,
+      "environmentId": 0,
+      "deviceType": 2,
+      "alias": "LB-AC1",
+      "dimmable": false,
+      "switchable": true
+    }
+  ]
+}
