@@ -1,22 +1,15 @@
 import React from 'react';
 
 import i18n from 'i18n-js';
-import * as Localization from 'expo-localization';
+// import * as Localization from 'expo-localization';
+
 import {
   useFonts,
   JosefinSans_400Regular,
 } from '@expo-google-fonts/josefin-sans';
+import { colorPalette, Container } from '../../styles/global';
 
-import {
-  // Container,
-  Instruction,
-  Logo,
-  InputContainer,
-  CodeInput,
-  QRCode,
-} from './styles';
-
-import { Container } from '../../styles/global';
+import { Instruction, Logo, InputContainer, CodeInput, QRCode } from './styles';
 
 import logoImg from '../../assets/logo.png';
 import qrCode from '../../assets/QR_Code.png';
@@ -40,7 +33,7 @@ const SignIn: React.FC = () => {
   useFonts({ JosefinSans_400Regular });
 
   return (
-    <Container style={{ backgroundColor: '#0a3d62' }}>
+    <Container style={{ backgroundColor: colorPalette.taraweraDarkBlue }}>
       <Logo source={logoImg} />
       <Instruction>{i18n.t('instruction')}</Instruction>
       <InputContainer>

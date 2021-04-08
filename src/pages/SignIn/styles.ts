@@ -6,7 +6,7 @@ export const Container = styled.View`
   /* flex-direction: column; */
   /* align-items: center; */
   /* justify-content: center; */
-  background-color: #0a3d62;
+  background-color: ${global.colorPalette.taraweraDarkBlue};
   /* width: 100%; */
   /* padding: 0 40px; */
 `;
@@ -18,7 +18,7 @@ export const Logo = styled.Image`
 `;
 
 export const Instruction = styled.Text`
-  color: #f6b93b;
+  color: ${global.colorPalette.saffronYellow};
   font-size: ${global.FONT_BASE_SIZE}px;
   font-family: 'JosefinSans_400Regular';
   text-align: left;
@@ -27,7 +27,7 @@ export const Instruction = styled.Text`
 
 export const InputContainer = styled.View`
   margin: 0 auto;
-  border: solid 3px #f6b93b;
+  border: solid 3px ${global.colorPalette.saffronYellow};
   border-radius: 10px;
   height: 70px;
   width: 100%;
@@ -39,7 +39,7 @@ export const InputContainer = styled.View`
 `;
 
 export const CodeInput = styled.TextInput`
-  color: #f6b93b;
+  color: ${global.colorPalette.saffronYellow};
   flex: 1;
   width: 100%;
   font-family: 'JosefinSans_400Regular';

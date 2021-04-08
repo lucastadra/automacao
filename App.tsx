@@ -7,10 +7,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import {
-  useFonts,
   JosefinSans_400Regular,
+  JosefinSans_600SemiBold,
+  JosefinSans_700Bold,
 } from '@expo-google-fonts/josefin-sans';
-import { Container } from './src/styles/global';
 
 import Routes from './src/routes';
 
@@ -29,6 +29,8 @@ export default class App extends React.Component<
     try {
       await Font.loadAsync({
         JosefinSans_400Regular,
+        JosefinSans_600SemiBold,
+        JosefinSans_700Bold,
       });
 
       this.setState({ fontLoaded: true });
