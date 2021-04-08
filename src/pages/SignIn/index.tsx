@@ -8,13 +8,15 @@ import {
 } from '@expo-google-fonts/josefin-sans';
 
 import {
-  Container,
+  // Container,
   Instruction,
   Logo,
   InputContainer,
   CodeInput,
   QRCode,
 } from './styles';
+
+import { Container } from '../../styles/global';
 
 import logoImg from '../../assets/logo.png';
 import qrCode from '../../assets/QR_Code.png';
@@ -31,18 +33,18 @@ i18n.translations = {
       'Em seu primeiro login, você precisa se conectar à mesma rede à qual o painel de automação está conectado.',
   },
 };
-i18n.locale = Localization.locale;
+i18n.locale = 'en';
 i18n.fallbacks = true;
 
 const SignIn: React.FC = () => {
   useFonts({ JosefinSans_400Regular });
 
   return (
-    <Container>
+    <Container style={{ backgroundColor: '#0a3d62' }}>
       <Logo source={logoImg} />
       <Instruction>{i18n.t('instruction')}</Instruction>
       <InputContainer>
-        <CodeInput />
+        <CodeInput keyboardType="number-pad" maxLength={6} />
         <QRCode source={qrCode} />
       </InputContainer>
       <Instruction>{i18n.t('info')}</Instruction>
