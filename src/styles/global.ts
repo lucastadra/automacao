@@ -8,6 +8,7 @@ export const Container = styled.View`
   justify-content: center;
   width: 100%;
   padding: 0 40px;
+  font-family: 'JosefinSans-Regular';
 `;
 
 export const colorPalette = {

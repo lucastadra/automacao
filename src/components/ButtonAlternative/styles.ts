@@ -13,6 +13,6 @@ export const Container = styled(RectButton)`
 `;
 export const ButtonText = styled.Text`
   color: ${global.colorPalette.baseWhite};
-  font-family: 'JosefinSans_600SemiBold';
+  font-family: 'JosefinSans-SemiBold';
   font-size: ${global.FONT_BASE_SIZE}px;
 `;

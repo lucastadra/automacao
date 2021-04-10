@@ -32,6 +32,6 @@ export const TextInput = styled.TextInput`
   color: ${global.colorPalette.saffronYellow};
   flex: 1;
   width: 100%;
-  font-family: 'JosefinSans_400Regular';
+  font-family: 'JosefinSans-Regular';
   font-size: ${global.FONT_BASE_SIZE}px;
 `;

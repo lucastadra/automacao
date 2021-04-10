@@ -20,7 +20,7 @@ export const Logo = styled.Image`
 export const Instruction = styled.Text`
   color: ${global.colorPalette.saffronYellow};
   font-size: ${global.FONT_BASE_SIZE}px;
-  font-family: 'JosefinSans_400Regular';
+  font-family: 'JosefinSans-Regular';
   text-align: left;
   margin: 15% 0;
 `;
@@ -42,7 +42,7 @@ export const CodeInput = styled.TextInput`
   color: ${global.colorPalette.saffronYellow};
   flex: 1;
   width: 100%;
-  font-family: 'JosefinSans_400Regular';
+  font-family: 'JosefinSans-Regular';
   font-size: ${global.FONT_BASE_SIZE}px;
 `;
 
