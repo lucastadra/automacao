@@ -22,14 +22,14 @@ export const Instruction = styled.Text`
   font-size: ${global.FONT_BASE_SIZE}px;
   font-family: 'JosefinSans-Regular';
   text-align: left;
-  margin: 15% 0;
+  margin: 14% 0;
 `;
 
 export const InputContainer = styled.View`
   margin: 0 auto;
   border: solid 3px ${global.colorPalette.saffronYellow};
   border-radius: 10px;
-  height: 70px;
+  height: 55px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -48,6 +48,6 @@ export const CodeInput = styled.TextInput`
 
 export const QRCode = styled.Image`
   resize-mode: contain;
-  height: 100%;
-  margin-right: -8px;
+  height: 85%;
+  margin-right: -14px;
 `;
