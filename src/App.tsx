@@ -20,7 +20,7 @@ Sentry.init({
       routingInstrumentation,
     }),
   ],
-  tracesSampleRate: 1.0,
+  tracesSampleRate: 0.2,
 });
 
 const App: React.FC = () => {
