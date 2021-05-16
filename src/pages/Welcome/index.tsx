@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useCallback, useEffect } from 'react';
+import React from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -8,29 +8,8 @@ import { Instruction, Logo } from './styles';
 import logoImg from '../../assets/logo.png';
 import Button from '../../components/Button';
 
-import api from '../../services/api';
-
 const SignIn: React.FC = () => {
-  const [code, setCode] = React.useState('');
   const navigation = useNavigation();
-  const handleSubmit = (data: string): void => {
-    if (data.length === 9) {
-      setCode(data);
-    }
-  };
-
-  useEffect(() => {
-    async function handleSignIn(): Promise<void> {
-      const response = await api.get('sessionsUser');
-
-      const { user } = response.data;
-
-      if (user.code === code) {
-        console.log('Login');
-      }
-    }
-    handleSignIn();
-  }, [code]);
 
   return (
     <KeyboardAvoidingView

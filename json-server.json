@@ -5,12 +5,35 @@
         "email": "lucastadra16@gmail.com",
         "name": "Lucas Tadra",
         "type": "user",
-        "code": "123456789",
-        "avatarUrl": "",
+        "code": "123456",
+        "avatarUrl": "https://web.whatsapp.com/pp?t=l&u=554299207115%40c.us&i=1615301174&n=ISPiKsXeAZcwGLnKiRunxZFWEXiiIi49y7yN%2B7C0Tdc%3D",
         "userRole": "Admin"
       },
       "token": "batata123456"
     },
+    "userProfiles": [
+      {
+        "id": 1,
+        "email": "lucastadra16@gmail.com",
+        "name": "Lucas Tadra",
+        "avatarUrl": "",
+        "userRole": "Admin"
+      },
+      {
+        "id": 2,
+        "email": "gebezin@hotmail.com",
+        "name": "Gabriel Mainginski",
+        "avatarUrl": "https://scontent.fbfh3-2.fna.fbcdn.net/v/t1.6435-9/121256541_10214629367087483_1118923327573722474_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeF9u3xXAeKdrNoRkRhbMxzM_d259PFM49H93bn08Uzj0QU3sRzXFehPOboInuMFT-YKxW7e3pr5g22xhSatp6DW&_nc_ohc=HFTKpP8FAh8AX8cX-jh&_nc_ht=scontent.fbfh3-2.fna&oh=b0ad128574465dd63709b4f0e1b96171&oe=60C9032A",
+        "userRole": "Common"
+      },
+      {
+        "id": 3,
+        "email": "",
+        "name": "Fernanda Coradim",
+        "avatarUrl": "",
+        "userRole": "Common"
+      }
+    ],
     "userEnvironments": [
       {
         "id": 0,

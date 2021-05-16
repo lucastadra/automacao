@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/react-hook-form -D
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/react-native-anchor-carousel -D
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lucas\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Microsoft Network Monitor 3;C:\Program Files\Git\cmd;C:\Program Files\OpenJDK\openjdk-11.0.10_9\bin;D:\Lucas-HDD\Programas\Android\Sdk\emulator;D:\Lucas-HDD\Programas\Android\Sdk\tools;D:\Lucas-HDD\Programas\Android\Sdk\tools\bin;D:\Lucas-HDD\Programas\Android\Sdk\platform-tools;C:\Users\lucas\AppData\Roaming\npm\bin;C:\Program Files\nodejs;C:\Users\lucas\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\lucas\AppData\Local\Programs\Python\Python39;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;C:\Program Files\liquibase;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\lucas\AppData\Local\Yarn\bin;C:\MinGW64\mingw64\bin;C:\Users\lucas\.dotnet\tools;C:\Program Files\PostgreSQL\10\bin;C:\Users\lucas\AppData\Roaming\npm
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-hook-form: Not found
+  Error: https://registry.yarnpkg.com/@types%2freact-native-anchor-carousel: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
       at Request.emit (events.js:315:20)
@@ -41,6 +41,7 @@ npm manifest:
       "api": "json-server --host 192.168.31.51 --port 3333 --watch json-server.json"
     },
     "dependencies": {
+      "@react-native-community/async-storage": "^1.12.1",
       "@react-native-community/masked-view": "^0.1.10",
       "@react-navigation/native": "^5.9.4",
       "@react-navigation/stack": "^5.14.4",
@@ -48,8 +49,8 @@ npm manifest:
       "axios": "^0.21.1",
       "react": "17.0.1",
       "react-dom": "^17.0.2",
-      "react-hook-form": "^7.6.0",
       "react-native": "0.64.0",
+      "react-native-anchor-carousel": "^3.1.2",
       "react-native-gesture-handler": "^1.10.3",
       "react-native-reanimated": "^2.1.0",
       "react-native-safe-area-context": "^3.2.0",
@@ -1143,6 +1144,13 @@ Lockfile:
     dependencies:
       "@nodelib/fs.scandir" "2.1.4"
       fastq "^1.6.0"
+  
+  "@react-native-community/async-storage@^1.12.1":
+    version "1.12.1"
+    resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.12.1.tgz#25f821b4f6b13abe005ad67e47c6f1cee9f27b24"
+    integrity sha512-70WGaH3PKYASi4BThuEEKMkyAgE9k7VytBqmgPRx3MzJx9/MkspwqJGmn3QLCgHLIFUgF1pit2mWICbRJ3T3lg==
+    dependencies:
+      deep-assign "^3.0.0"
   
   "@react-native-community/cli-debugger-ui@^5.0.1-alpha.1":
     version "5.0.1-alpha.1"
@@ -3176,6 +3184,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
     integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
   
+  deep-assign@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-3.0.0.tgz#c8e4c4d401cba25550a2f0f486a2e75bc5f219a2"
+    integrity sha512-YX2i9XjJ7h5q/aQ/IM9PEwEnDqETAIYbggmdDB3HLTlSgo1CxPsj6pvhPG68rq6SVE0+p+6Ywsm5fTYNrYtBWw==
+    dependencies:
+      is-obj "^1.0.0"
+  
   deep-extend@^0.6.0:
     version "0.6.0"
     resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
@@ -4913,6 +4928,11 @@ Lockfile:
     version "7.0.0"
     resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
     integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+  
+  is-obj@^1.0.0:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+    integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
   
   is-obj@^2.0.0:
     version "2.0.0"
@@ -7087,7 +7107,7 @@ Lockfile:
       kleur "^3.0.3"
       sisteransi "^1.0.5"
   
-  prop-types@^15.7.2:
+  prop-types@^15.5.10, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -7210,11 +7230,6 @@ Lockfile:
       object-assign "^4.1.1"
       scheduler "^0.20.2"
   
-  react-hook-form@^7.6.0:
-    version "7.6.0"
-    resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.6.0.tgz#ec8aa8376738356c5af09992404292ba04067ac4"
-    integrity sha512-Ai3lx5TZO/W274PVgIqOkjhCAxQJ7KRU9c6tTM1M0LDctCUZ0LavirUiy+42b0gxGLUswO0vPsxcpw1CkkebUA==
-  
   "react-is@^16.12.0 || ^17.0.0", react-is@^17.0.1:
     version "17.0.2"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
@@ -7224,6 +7239,13 @@ Lockfile:
     version "16.13.1"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
     integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+  
+  react-native-anchor-carousel@^3.1.2:
+    version "3.1.2"
+    resolved "https://registry.yarnpkg.com/react-native-anchor-carousel/-/react-native-anchor-carousel-3.1.2.tgz#d2ede7d51569b1a78b96665d0fd35da2c46c23a6"
+    integrity sha512-LPnK0mIK+/+t6gki14fQWMSMA2NbiG9gLGayuw2sNCegTnQQGl+NYbvyHinAH7WEm26dZe1YHlRnNPOaEzqKUQ==
+    dependencies:
+      prop-types "^15.5.10"
   
   react-native-codegen@^0.0.6:
     version "0.0.6"

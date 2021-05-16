@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useCallback, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { colorPalette, Container } from '../../styles/global';
 
@@ -10,20 +11,12 @@ import qrCode from '../../assets/QR_Code.png';
 
 import api from '../../services/api';
 
-interface User {
-  id: number;
-  email: string;
-  name: string;
-  type: string;
-  code: string;
-  avatarUrl: string;
-  userRole: string;
-}
-
 const SignIn: React.FC = () => {
   const [code, setCode] = React.useState('');
+  const navigation = useNavigation();
+
   const handleSubmit = (data: string): void => {
-    if (data.length === 9) {
+    if (data.length === 6) {
       setCode(data);
     }
   };
@@ -35,11 +28,11 @@ const SignIn: React.FC = () => {
       const { user } = response.data;
 
       if (user.code === code) {
-        console.log('Login');
+        navigation.navigate('ProfileSelection');
       }
     }
     handleSignIn();
-  }, [code]);
+  }, [code, navigation]);
 
   return (
     <KeyboardAvoidingView
@@ -59,7 +52,7 @@ const SignIn: React.FC = () => {
           <InputContainer>
             <CodeInput
               keyboardType="number-pad"
-              maxLength={9}
+              maxLength={6}
               onChangeText={(input) => {
                 handleSubmit(input);
               }}
