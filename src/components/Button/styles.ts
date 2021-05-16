@@ -9,7 +9,7 @@ export const Container = styled(RectButton)`
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
+  margin: 4px 0;
 `;
 export const ButtonText = styled.Text`
   color: ${global.colorPalette.taraweraDarkBlue};

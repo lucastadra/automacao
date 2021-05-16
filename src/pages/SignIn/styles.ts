@@ -44,6 +44,7 @@ export const CodeInput = styled.TextInput`
   width: 100%;
   font-family: 'JosefinSans-Regular';
   font-size: ${global.FONT_BASE_SIZE}px;
+  text-transform: uppercase;
 `;
 
 export const QRCode = styled.Image`
